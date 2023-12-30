@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './HomePage/home/home.component';
 import { PageNotFoundComponent } from './HomePage/page-not-found/page-not-found.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
-import { ProjectComponent } from './project/project.component';
+import { AboutComponent } from './Pages/about/about.component';
+import { ContactComponent } from './Pages/contact/contact.component';
+import { ProjectComponent } from './Pages/project/project.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent,pathMatch: 'full'},
