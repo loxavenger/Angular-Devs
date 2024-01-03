@@ -3,13 +3,15 @@
     position: relative;
     max-width: 100rem;
     // background-color: black;
-
+   
 
     .contact-page {
         background-color: black;
         width: 100%;
         height: auto;
-
+        @media(max-width:420px){
+            width: 120%;
+        }
         .parent {
             display: flex;
             flex-direction: row;
@@ -21,30 +23,33 @@
             .contact {
                 flex: 0.75;
                 padding: 2rem;
-                --tw-bg-opacity: 1;
-                background-color: rgb(41 41 41/var(--tw-bg-opacity));
+                opacity: 0.8;
+                background-color: rgba(41, 41, 41, 1);
                 border-radius: 1rem;
                 display: inline-block;
                 overflow: hidden;
                 white-space: nowrap;
-                // transform: translateX(0%) translateY(0px) translateZ(0px);
+                font-family: Poppins, sans-serif;
                 
                 .getin {
-                    --tw-text-opacity: 1;
-                    color: rgb(153 153 161 / var(--tw-text-opacity));
-                    font-family: Poppins, sans-serif;
+                    color:rgba(240, 248, 255, 0.747);
                     letter-spacing: 0.05rem;
                     text-transform: uppercase;
                     font-weight: 600;
+                    @media(max-width:530px){
+                        font-size: small;
+                    }
                 }
 
                 .h3head {
-                    --tw-text-opacity: 1;
-                    color: rgb(212 212 216 / var(--tw-text-opacity));
+                    color:aliceblue;
                     font-weight: 900;
-                    font-family: Poppins, sans-serif;
                     font-size: 60px;
                     margin-top: auto;
+
+                    @media(max-width:530px){
+                        font-size: 25px;
+                    }
                 }
 
                 .form {
@@ -52,7 +57,7 @@
                     flex-direction: column;
                     margin-top: 2.5rem;
                     gap: 1.5rem;
-                    font-family: Poppins, sans-serif;
+                    
 
                     .label1 {
                         display: flex;
@@ -61,23 +66,15 @@
                         .text1 {
                             font-weight: 500;
                             margin-bottom: 1rem;
-                            --tw-text-opacity: 1;
-                            color: rgb(212 212 216 / var(--tw-text-opacity));
+                            color:aliceblue;
                         }
 
                         .input1 {
-                            --tw-text-opacity: 1;
-                            color: rgb(212 212 216 / var(--tw-text-opacity));
+                            color:aliceblue;
                             outline: 2px solid transparent;
-                            outline-offset: 2px;
-                            --tw-bg-opacity: 1;
-                            background-color: rgb(31 31 31 / var(--tw-bg-opacity));
+                            background-color: rgb(31, 31, 31,1 );
                             border-radius: 0.5rem;
-                            border-style: none;
-                            padding-top: 1rem;
-                            padding-bottom: 1rem;
-                            padding-left: 1.5rem;
-                            padding-right: 1.5rem;
+                            padding: 1rem 1.5rem;
 
                         }
 
@@ -89,21 +86,14 @@
                     }
 
                     .live-demo {
-                        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-                        transition-duration: .2s;
-                        transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-                        --tw-text-opacity: 1;
-                        color: rgb(212 212 216 / var(--tw-text-opacity));
+                        color:azure;
                         font-weight: 700;
                         display: flex;
                         justify-content: center;
-                        --tw-bg-opacity: 1;
-                        background-color: rgb(20 20 20 / var(--tw-bg-opacity));
-                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        background-color: rgb(20, 20, 20,1 );
                         border-radius: 10px;
                         white-space: nowrap;
                         align-items: center;
-                        border-radius: 10px;
                         padding-top: 1.25rem;
                         padding-bottom: 1.25rem;
                         font-size: 16px;
@@ -112,7 +102,7 @@
                         gap: 1rem;
                         text-transform: capitalize;
                         cursor: pointer;
-                        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+                        
 
                         .send {
                             max-width: 100%;
@@ -120,6 +110,12 @@
                             height: 30px;
                             object-fit: contain;
                         }
+
+                            @media (max-width:1130px){
+                                .send-span{
+                                    display: none;
+                                }
+                            }
                     }
 
 
