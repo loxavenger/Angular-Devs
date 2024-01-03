@@ -10,6 +10,8 @@ import { FooterComponent } from './HomePage/footer/footer.component';
 import { PageNotFoundComponent } from './HomePage/page-not-found/page-not-found.component';
 import { ContactComponent } from './Pages/contact/contact.component';
 import { ProjectComponent } from './Pages/project/project.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,11 @@ import { ProjectComponent } from './Pages/project/project.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

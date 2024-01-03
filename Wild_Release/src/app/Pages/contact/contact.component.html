@@ -1,1 +1,30 @@
-<p>contact works!</p>
+<div class="contact-main">
+    <section class="contact-page">
+        <div class="parent" >
+            <div class="contact" [@slideInFromLeft]>
+                <p class="getin">Get In Touch</p>
+                <h3 class="h3head">Contact.</h3>
+                <form [formGroup]="userForm" (ngSubmit)="handleSubmit()" class="form">
+                    <label class="label1">
+                        <span class="text1">Your Name</span>
+                        <input type="text" placeholder="What's your name?" formControlName="name" class="input1">
+                    </label>
+                    <label class="label1">
+                        <span class="text1">Your Email</span>
+                        <input type="email" placeholder="What's your email?" formControlName="email" class="input1">
+                    </label>
+                    <label class="label1">
+                        <span class="text1">Your Message</span>
+                        <textarea name="message" rows="7" placeholder="What's your message?" formControlName="message"
+                            class="input1 resize"></textarea>
+                    </label>
+                    <button type="submit" [disabled]="userForm.invalid" class="live-demo"
+                        (mouseover)="changeSendIcon(sendHover)" (mouseout)="changeSendIcon(send)">
+                        <span>SEND</span>
+                        <img [src]="sendIcon" alt="send" class="send">
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
