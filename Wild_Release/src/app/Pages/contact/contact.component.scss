@@ -14,6 +14,7 @@
             width: 120%;
         }
 
+
         .parent {
             display: flex;
             flex-direction: row;
@@ -25,12 +26,12 @@
             .contact {
                 flex: 0.75;
                 padding: 2rem;
+
                 background-color: rgb(41, 41, 41);
                 border-radius: 1rem;
                 display: inline-block;
                 overflow: hidden;
                 white-space: nowrap;
-
 
                 .getin {
 
@@ -55,6 +56,7 @@
                     @media(max-width:600px) {
                         font-size: 25px;
                     }
+
                 }
 
                 .form {
@@ -62,6 +64,8 @@
                     flex-direction: column;
                     margin-top: 2.5rem;
                     gap: 1.5rem;
+                    font-family: Poppins, sans-serif;
+
 
                     .label1 {
                         display: flex;
@@ -108,13 +112,13 @@
                         text-transform: capitalize;
                         cursor: pointer;
 
-
                         .send {
                             max-width: 100%;
                             display: block;
                             height: 30px;
                             object-fit: contain;
                         }
+
 
                         @media(max-width:1130px) {
                             .send-span {
@@ -132,3 +136,4 @@
 
     }
 }
+

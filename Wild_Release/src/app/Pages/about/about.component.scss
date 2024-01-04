@@ -41,7 +41,6 @@
     letter-spacing: 0.01px;
 }
 .About-cards{
-    background-color: antiquewhite;
     max-width: 100%;
     height: auto;
     display: flex;
@@ -50,19 +49,39 @@
     flex-wrap: wrap;
     justify-content: space-around;
 
+    .card{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        max-width: 220px;
+        height:280px ;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(51 51 51);
+        margin: 10px;
+
+        .card_icons{
+            display: flex;
+            justify-content: center;
+            img{
+                max-width: 30%;
+            }
+        }
+        .card_text{
+            font-family:Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            color:rgb(153 153 161) ;
+            max-width: 30%;
+            text-align: center;
+        
+        }
+
+    }
+
 }
-.card{
-    width: 200px;
-    height:280px ;
-    padding: 1.2rem, 3rem;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: rgb(51 51 51);
-    margin: 10px;
-}
+
 
 @media(max-width:600px){
     .About{
