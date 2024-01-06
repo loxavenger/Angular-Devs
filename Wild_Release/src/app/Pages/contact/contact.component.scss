@@ -2,8 +2,6 @@
     z-index: 0;
     position: relative;
     max-width: 100rem;
-    // background-color: black;
-
 
     .contact-page {
         background-color: black;
@@ -13,7 +11,6 @@
         @media(max-width:1024px) {
             width: 120%;
         }
-
 
         .parent {
             display: flex;
@@ -26,7 +23,6 @@
             .contact {
                 flex: 0.75;
                 padding: 2rem;
-
                 background-color: rgb(41, 41, 41);
                 border-radius: 1rem;
                 display: inline-block;
@@ -34,7 +30,6 @@
                 white-space: nowrap;
 
                 .getin {
-
                     color: rgb(153 153 161);
                     letter-spacing: 0.05rem;
                     text-transform: uppercase;
@@ -46,10 +41,8 @@
                 }
 
                 .h3head {
-
                     color: rgb(212 212 216);
                     font-weight: 900;
-                    font-family: Poppins, sans-serif;
                     font-size: 60px;
                     margin-top: auto;
 
@@ -64,7 +57,6 @@
                     flex-direction: column;
                     margin-top: 2.5rem;
                     gap: 1.5rem;
-                    font-family: Poppins, sans-serif;
 
 
                     .label1 {
@@ -84,8 +76,6 @@
                             border-radius: 0.5rem;
                             padding: 1rem 1.5rem;
 
-                        }
-
                         .resize {
                             resize: none;
                             white-space: nowrap;
@@ -94,7 +84,6 @@
                     }
 
                     .live-demo {
-
                         color: rgb(212 212 216);
                         font-weight: 700;
                         display: flex;
@@ -119,7 +108,6 @@
                             object-fit: contain;
                         }
 
-
                         @media(max-width:1130px) {
                             .send-span {
                                 display: none;
@@ -131,8 +119,6 @@
                 }
             }
         }
-
-
 
     }
 }
